@@ -51,7 +51,7 @@ print(" * Loading Keras Model...")
 graph = tf.compat.v1.get_default_graph()
 get_model()
 
-#our API endpoint that will service the frontend requests
+#Our API endpoint that will service the frontend requests
 @app.route("/predict", methods=["POST"])	
 def predict():
 
