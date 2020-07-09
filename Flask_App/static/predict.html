@@ -3,7 +3,7 @@
 <head>
 	<title>Prediction</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!--Bootstrap 4 CSS -->
-	<link rel = "stylesheet" type = "text/css" href = "style.css" > <!-- custom stylesheet-->
+	<link rel = "stylesheet" type = "text/css" href = "css/style.css" > <!-- custom stylesheet-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- To ensure proper rendering and touch zooming for all devices -->
 </head>
 <body>
@@ -20,39 +20,18 @@
 
   		<div class="collapse navbar-collapse" id="navbarSupportedContent">
     		<ul class="navbar-nav mr-auto">
-      			<li class="nav-item">
-        			<a class="nav-link" href="#">Home</a>
+      			<li class="nav-item active">
+        			<a class="nav-link active" href="#">Home</a>
       			</li>
       			
       			<li class="nav-item">
-        			<a class="nav-link" href="#">About Us</a>
+        			<a class="nav-link" href="#about">About Us</a>
       			</li>
 
       			<li class="nav-item">
-        			<a class="nav-link" href="#">News</a>
-      			</li>
-
-      			<li class="nav-item">
-        			<a class="nav-link" href="#">Resources</a>
-      			</li>
-
-      			<li class="nav-item">
-        			<a class="nav-link" href="#">Our Impact</a>
-      			</li>
-
-      			<li class="nav-item">
-        			<a class="nav-link" href="#">Donate</a>
-      			</li>
-
-      			<li class="nav-item active">
-        			<a class="nav-link active" href="#">Our Predictor</a>
+        			<a class="nav-link" href="#pred-container1">Our Predictor</a>
       			</li>
       		</ul>
-
-		    <form class="form-inline my-2 my-lg-0">
-		      	<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		      	<button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><span class="glyphicon glyphicon-search"></span>Search</button>
-		    </form>
 		 </div>
 	</nav>
 
@@ -120,7 +99,7 @@
 
 				<button id="predict-button">Predict</button>
 				
-				<p id="pred-head">Predictions:<span id="prediction"></span></p>
+				<p id="pred-head">Predictions: <span id="prediction"></span></p>
 				
 				<div class="mx-auto" id="selected-image-conatiner">
 					<center>
@@ -130,10 +109,12 @@
 		</div>
 	</div>
 	
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="pred_img.js"></script>
+	<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+		<b style="color: white; padding-left: 34%; padding-top: 20px; padding-bottom: 20px">© 2020 Copyright: Malaria No More. All Rights Reserved.</b>
+	</nav>
 
-	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/pred_img.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
   	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
